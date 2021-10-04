@@ -1,0 +1,232 @@
+.signup-step-two-form-content {
+  margin: 20px 0;
+  max-width: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .box-warning {
+    position: absolute;
+    top: 140px;
+    right: 20px;
+
+    .box-warning-username {
+      width: 200px;
+      height: 0;
+      background-color: #FF0000;
+      overflow: hidden;
+      box-sizing: border-box;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 10px 0;
+      transition: all ease .3s;
+      
+      .message {
+        margin: 0;
+        color: #FFF;
+      }
+    }
+  
+    .box-warning-password {
+      width: 200px;
+      height: 0;
+      background-color: #FF0000;
+      overflow: hidden;
+      box-sizing: border-box;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 10px 0;
+      transition: all ease .3s;
+      
+      .message {
+        margin: 0;
+        color: #FFF;
+      }
+    }
+
+    .box-warning-confirm-password {
+      width: 200px;
+      height: 0;
+      background-color: #FF0000;
+      overflow: hidden;
+      box-sizing: border-box;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 10px 0;
+      transition: all ease .3s;
+      
+      .message {
+        margin: 0;
+        color: #FFF;
+      }
+    }
+
+    .box-warning-request {
+      width: 200px;
+      height: 0;
+      background-color: #FF0000;
+      overflow: hidden;
+      box-sizing: border-box;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 10px 0;
+      transition: all ease .3s;
+      
+      .message {
+        margin: 0;
+        color: #FFF;
+      }
+    }
+  
+    .box-warning-active {
+      height: auto;
+      padding: 10px;
+    }
+  }
+
+  .input-username {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #E1E8F3;
+    margin-bottom: 10px;
+    border: 0;
+    outline: 0;
+    padding: 0 15px;
+    box-sizing: border-box;
+
+    &::placeholder {
+      color: #828BA1;
+    }
+  }
+
+  .warning-username {
+    font-size: 14px;
+    color: #828BA1;
+    margin: 0;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .group-inputs {
+    margin-bottom: 30px;
+
+    label {
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      input {
+        width: 100%;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #E1E8F3;
+        margin-bottom: 10px;
+        border: 0;
+        outline: 0;
+        padding: 0 15px;
+        box-sizing: border-box;
+  
+        &::placeholder {
+          color: #828BA1;
+        }
+      }
+
+      span {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        cursor: pointer;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .terms-of-use {
+    font-size: 14px;
+    text-align: center;
+    color: #828BA1;
+    margin: 0;
+    margin-bottom: 30px;
+
+    a {
+      color: #828BA1;
+      font-weight: bold;
+      transition: all ease .3s;
+
+      &:hover {
+        color: #606980;
+      }
+    }
+  }
+
+  .button-to-enter {
+    height: 50px;
+    border-radius: 10px;
+    color: #FFF;
+    background-color: #00C1A5;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: all ease .3s;
+    margin-bottom: 20px;
+
+    &:hover {
+      background-color: #22E3C7;
+    }
+  }
+
+  .redirect-sigin {
+    align-self: center;
+    color: #828BA1;
+    margin-bottom: 80px;
+
+    a {
+      font-weight: bold;
+      color: #828BA1;
+      transition: all ease .3s;
+
+      &:hover {
+        color: #606980;
+      }
+    }
+  }
+}
+
+@media only screen and (max-device-width: 825px) {
+  .signup-step-two-form-content {
+    .box-warning {
+      width: 100%;
+      position: fixed;
+      top: unset;
+      right: unset;
+      left: 0;
+      bottom: 10px;
+      padding: 0 10px;
+      box-sizing: border-box;
+
+      .box-warning-username {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .box-warning-password {
+        width: 100%;
+      }
+
+      .box-warning-confirm-password {
+        width: 100%;
+      }
+
+      .box-warning-request {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-device-width: 425px) {
+  .signup-step-two-form-content {
+    max-width: none;
+  }
+}

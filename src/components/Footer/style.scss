@@ -1,0 +1,156 @@
+footer {
+  height: auto;
+  padding: 20px;
+  background-color: #1A1B20;
+
+  .container {
+    max-width: 1050px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+
+    .footer-area {
+      flex: 1;
+      border-right: 1px solid #2D3F37;
+      display: flex;
+      flex-direction: column;
+
+      .social-networks-area {
+        flex: 1;
+        display: flex;
+
+        .block {
+          flex: 1;
+          padding: 0 5px;
+          box-sizing: border-box;
+
+          .logo {
+            width: 100%;
+            height: 30px;
+            border-radius: 10px;
+            color: #828BA1;
+            background-color: #313641;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: bold;
+          }
+
+          ul {
+            margin: 0;
+            margin-left: 10px;
+            padding: 0;
+            list-style: none;
+
+            li {
+              margin-bottom: 10px;
+              color: #D8E0F2;
+            }
+          }
+
+          p {
+            margin: 0;
+            color: #D8E0F2;
+          }
+
+          .title {
+            color: #828BA1;
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
+
+          .social-networks {
+            font-size: 24px;
+
+            svg {
+              margin: 0 4px;
+              color: #D8E0F2;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      .footer {
+        height: 30px;
+
+        p {
+          font-size: 12px;
+          margin: 0;
+          color: #828BA1;
+        }
+      }
+    }
+
+    .contact-area {
+      max-width: 300px;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      padding-left: 30px;
+      padding-right: 30px;
+
+      .title {
+        font-size: 16px;
+        color: #828BA1;
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+
+      .button-whatsapp {
+        max-width: 200px;
+        width: 100%;
+        height: 50px;
+        border: 1px solid #34363F;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        color: #D8E0F2;
+        cursor: pointer;
+        margin-bottom: 10px;
+
+        svg {
+          font-size: 25px;
+          margin-right: 10px;
+        }
+      }
+
+      .button-email {
+        max-width: 200px;
+        width: 100%;
+        height: 50px;
+        border: 1px solid #34363F;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        color: #D8E0F2;
+        cursor: pointer;
+        margin-bottom: 20px;
+
+        svg {
+          font-size: 25px;
+          margin-right: 10px;
+        }
+      }
+
+      .warning {
+        font-size: 16px;
+        color: #828BA1;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-device-width: 1050px) {
+  footer {
+    display: none;
+  }
+}

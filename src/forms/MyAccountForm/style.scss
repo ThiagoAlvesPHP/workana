@@ -1,0 +1,82 @@
+.my-account-form-area {
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #262A34;
+  }
+
+  .input {
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    position: relative;
+
+    p {
+      margin: 0;
+      margin-left: 20px;
+      font-size: 12px;
+      margin-bottom: 10px;
+      color: #828BA1;
+    }
+
+    input {
+      height: 30px;
+      border: 1px solid #E1E8F3;
+      border-radius: 10px;
+      outline: 0;
+      padding: 0 15px;
+
+      &::placeholder {
+        color: #262A34;
+      }
+    }
+
+    .input-disabled {
+      background-color: #FFF;
+    }
+
+    span {
+      font-size: 14px;
+      font-weight: bold;
+      color: #00C1A5;
+      cursor: pointer;
+      position: absolute;
+      top: 31px;
+      right: 15px;
+    }
+  }
+
+  .button-save-editions {
+    max-width: 300px;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    color: #FFF;
+    background-color: #00C1A5;
+    cursor: pointer;
+    transition: all ease .3s;
+
+    &:hover {
+      background-color: #22D3C7;
+    }
+  }
+}
+
+@media only screen and (max-device-width: 825px) {
+  .my-account-form-area {
+    .input {
+      max-width: none;
+    }
+
+    .button-save-editions {
+      max-width: none;
+    }
+  }
+}

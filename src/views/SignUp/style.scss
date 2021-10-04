@@ -1,0 +1,153 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#breadcrumbs-signup {
+  margin-bottom: 20px;
+
+  .container {
+    max-width: 1050px;
+    width: 100%;
+    margin: auto;
+
+    p {
+      margin: 0;
+      display: flex;
+      color: #828BA1;
+      font-size: 14px;
+
+      svg {
+        margin: 0 20px;
+      }
+
+      span {
+        display: flex;
+        align-items: center;
+        color: #828BA1;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+#signup-area {
+  margin: 20px 0;
+
+  .container {
+    max-width: 1050px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .steps-signup {
+      margin-bottom: 20px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+
+      .line {
+        width: 10px;
+        margin: 0 5px;
+        height: 1px;
+        background-color: #E1E8F3;
+      }
+
+      .step {
+        font-size: 14px;
+        font-weight: bold;
+        width: 20px;
+        height: 20px;
+        border: 3px solid #828BA1;;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all ease .3s;
+      }
+
+      .step-active {
+        width: 25px;
+        height: 25px;
+        background-color: #828BA1;
+        color: #FFF;
+      }
+    }
+
+    h1 {
+      color: #262A34;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (min-device-width: 825px) and (max-device-width: 1050px) {
+  #breadcrumbs-signup {
+    .container {
+      max-width: 825px;
+    }
+  }
+
+  #signup-area {
+    .container {
+      max-width: 825px;
+    }
+  }
+}
+
+@media only screen and (min-device-width: 425px) and (max-device-width: 825px) {
+  #breadcrumbs-signup {
+    display: none;
+  }
+
+  #signup-area {
+    .container {
+      max-width: 425px;
+
+      .steps-signup {
+        margin-top: 40px;
+      }
+
+      h1 {
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-device-width: 425px) {
+  #breadcrumbs-signup {
+    display: none;
+  }
+
+  #signup-area {
+    padding:  0 10px;
+    
+    .container {
+      max-width: none;
+      align-items: flex-start;
+
+      .steps-signup {
+        margin-top: 40px;
+      }
+
+      h1 {
+        text-align: left;
+        
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+}
